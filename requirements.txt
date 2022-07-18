@@ -7,6 +7,7 @@ astunparse==1.6.3
 attrs==21.4.0
 Babel==2.10.3
 backcall==0.2.0
+basemap
 beautifulsoup4==4.11.1
 bidict==0.22.0
 bleach==5.0.1
@@ -115,6 +116,7 @@ PyMsgBox==1.0.9
 pyparsing==3.0.8
 pyperclip==1.8.2
 pypiwin32==223
+pyproj==3.3.1
 PyRect==0.2.0
 pyrsistent==0.18.1
 PyScreeze==0.1.28
