@@ -7,7 +7,7 @@ The Face Mask Detection where it uses facial and object recognition to accuratel
 ![Thumbnail](/blog/header.jpg)
 
 ## Creator
-Hello! My name is Pratik, a sophomore studying Computer Science at the University of Southern California. I have many interests but currently, I want to explore more in the field of robotics, artificial intelligence, and front-end development. Outside of coding, I love to do digital design, gaming, hanging out with friends, and streaming on [twitch](#)! I also have a personal website [here](https://pratikrk.github.io/portfolio/) if you would like to know more about me.
+Hello! My name is Pratik, a sophomore studying Computer Science. I have many interests but currently, I want to explore more in the field of robotics, artificial intelligence, and front-end development. Outside of coding, I love to do digital design, gaming, hanging out with friends, and streaming on [twitch](#)! I also have a personal website [here](https://pratikrk.github.io/portfolio/) if you would like to know more about me.
 
 ### Why I Created this Project
 I created this project because I wanted to address the problem with people not following the guidelines for wearing face-masks during a global pandemic. It saddens me to see those not putting on masks when needed in public because it causes a higher risk of spreading the virus even more. Thus, I created this project to encourage and enforce people to wear one.
