@@ -164,9 +164,6 @@ The results should be similiar to what you see below. The image on the left pres
 
 ![No Mask and Mask](/blog/nomaskandmask.png)
 
-## Demo
-![Short Demo](https://media.giphy.com/media/40SERPBtSSyg3ULGS6/giphy.gif)
-
 ## Future Plans
 I plan to have many improvements and suggestions to my project. 
 * In the future, I want to integrate this into a webcam where it’s able to detect LIVE and in real-time of whether or not the person is wearing a mask or not. 
