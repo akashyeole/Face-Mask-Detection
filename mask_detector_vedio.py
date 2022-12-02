@@ -33,7 +33,7 @@ for (x, y, w, h) in faces:
         (WithoutMask, CorrectMask, InCorrectMask) = preds
         if max(preds) == CorrectMask:
             label = " Correct Mask"
-            color = (0, 255, 0)
+            color = (0, 0, 255)
             # correct_mask_count += 1
             IDs.append(1)
         elif max(preds) == InCorrectMask:
@@ -43,7 +43,7 @@ for (x, y, w, h) in faces:
             IDs.append(2)
         else:
             label = " No Mask"
-            color = (0, 0, 255)
+            color = (0, 255, 0)
             IDs.append(0)
         # include the probability in the label
         label = "{}: {:.2f}%".format(label, max(WithoutMask, CorrectMask, InCorrectMask) * 100)

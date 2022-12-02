@@ -71,11 +71,11 @@ def predictions_results(predictions, frame, faces_detected, filename):
         (WithoutMask, CorrectMask) = pred
         if max(pred) == CorrectMask:
             label = " No Mask"
-            color = (0, 255, 0)
+            color = (0, 0, 255)
             correct_mask_count.append(1)
         else:
             label = "Mask"
-            color = (0, 0, 255)
+            color = (0, 255, 0)
             no_mask_count.append(0)
 
         # include the probability in the label

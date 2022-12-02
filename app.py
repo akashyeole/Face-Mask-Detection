@@ -21,18 +21,18 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/ImageStream')
+@app.route('/ImageStream', methods = ['POST', 'GET'])
 def ImageStream():
     """the live page"""
     return render_template('RealtimeImage.html')
 
 
-@app.route('/video_feed')
+@app.route('/video_feed', methods = ['POST', 'GET'])
 def video_feed():
     return Response(gen_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
 
-@app.route('/takeimage', methods=['POST'])
+@app.route('/takeimage', methods = ['POST', 'GET'])
 def takeimage():
     """ Captures Images from WebCam, saves them and check face mask detection analysis """
 
@@ -60,13 +60,13 @@ def takeimage():
                                incorrect_mask_face="Incorrect face mask count: {}".format(results2[3]))
 
 
-@app.route('/UploadImage', methods=['POST'])
+@app.route('/UploadImage', methods=['GET','POST'])
 def UploadImage():
     """the upload image page"""
     return render_template('UploadPicture.html')
 
 
-@app.route('/UploadImageFunction', methods=['POST'])
+@app.route('/UploadImageFunction', methods = ['POST', 'GET'])
 def UploadImageFunction():
     if request.method == 'POST':
 
@@ -110,13 +110,13 @@ def UploadImageFunction():
                                        incorrect_mask_face="Incorrect face mask count: {}".format(results2[3]))
 
 
-@app.route('/UploadURLImage', methods=['POST'])
+@app.route('/UploadURLImage', methods = ['POST', 'GET'])
 def UploadURLImage():
     """the upload an image URL page"""
     return render_template('UploadURLImage.html')
 
 
-@app.route('/ImageUrl', methods=['POST'])
+@app.route('/ImageUrl', methods = ['POST', 'GET'])
 def ImageUrl():
     """the upload an image URL page"""
 

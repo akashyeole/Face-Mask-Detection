@@ -33,14 +33,14 @@ for pred in preds:
     (WithoutMask, CorrectMask, InCorrectMask) = pred
     if max(pred) == CorrectMask:
         label = " Correct Mask"
-        color = (0, 255, 0)
+        color = (0, 0, 255)
     elif max(pred) == InCorrectMask:
         label = " Incorrect Mask"
         color = (205, 00, 0)
 
     else:
         label = " No Mask"
-        color = (0, 0, 255)
+        color = (0, 255, 0)
 
     # include the probability in the label
     label = "{}: {:.2f}%".format(label, max(WithoutMask, CorrectMask, InCorrectMask) * 100)
